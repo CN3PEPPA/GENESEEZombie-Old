@@ -1,0 +1,189 @@
+@font-face {
+  font-family: 'BebasNeueBold';
+  src: url('font/BebasNeueBold.ttf');
+}
+@font-face {
+  font-family: 'BebasNeueBook';
+  src: url('font/BebasNeueBook.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+body {
+  /* background: url(images/bg.png);
+  background-size: cover;
+  background-position: center; */
+
+  overflow: hidden;
+}
+
+.main-content {
+  width: 100%;
+  height: 100%;
+
+  display: none;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: #121212;
+  
+  color: #fff;
+}
+
+.icon{
+  width: 120px;
+}
+
+.title {
+  font-size: 64pt;
+  font-family: 'BebasNeueBold';
+}
+
+.subtitle{
+  font-size: 36px;
+  font-family: 'BebasNeueBook';
+}
+
+.clock {
+  background-color: #121212c5;
+  padding: 6px 9px;
+  border-radius: 10px;
+
+  font-family: 'BebasNeueBold';
+  font-size: 36px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-surrender {
+  background-color: #DB5F5F;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px #DB5F5F80;
+  display: none;
+  color: #fff;
+  font-family: 'BebasNeueBold';
+  font-size: 36px;
+  border: none;
+
+  padding: 8px 15px;
+
+  cursor: pointer;
+
+  transition: all .2s ease-in-out;
+}
+
+.btn-surrender:hover {
+  transform: scale(1.1); 
+}
+
+.popup .overlay {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  display: none; /**/
+}
+
+.popup .content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 50%;
+  max-width: 350px;
+  border-radius: 10px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  font-family: 'BebasNeueBold';
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.popup .btn {
+  position: relative;
+  top: 10%;
+  outline: none !important;
+}
+
+.popup .title {
+  position: relative;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'BebasNeueBold';
+}
+
+.popup.active .overlay {
+  display: block;
+}
+
+.popup.active .content {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup .warning {
+  color: #DB5F5F;
+  font-size: 24px;
+}
+
+.subtitle-modal{
+  font-size: 24px;
+}
+
+.row{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  border-radius: 10px;
+  
+  font-family: 'BebasNeueBold';
+
+  font-size: 18px;
+
+  border: none;
+
+  padding: 8px 15px;
+
+  cursor: pointer;
+
+  transition: all .2s ease-in-out;
+  
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.btn-danger {
+  background-color: #DB5F5F;
+  color: #fff;
+}

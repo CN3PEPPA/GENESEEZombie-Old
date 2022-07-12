@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Projeto Z RP</title>
+</head>
+
+<body id="body">
+
+  <img src="images/cursor.png" id="cursor" class="cursor" alt="Cursor">
+
+  <div class="background">
+    <video id="bg-video" loop autoplay>
+      <source src="https://projetozrp.com/sources/videos/bg.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="content" id="content">
+    <img src="images/logonova.png" class="logo" alt="Logo">
+    <p class="title">Você está pronto para sobreviver?</p>
+
+    <div class="row mt-5">
+      <button onclick="volumeDown()" class="button"><i class="fa-solid fa-volume-low"></i></button>
+      <button onclick="volumeUp()" class="button"><i class="fa-solid fa-volume-high"></i></button>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

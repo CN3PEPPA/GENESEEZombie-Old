@@ -1,0 +1,48 @@
+html {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    background-color: transparent !important;
+}
+
+body {
+    background-color: transparent !important;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#notifyitens {
+    position: absolute !important;
+    left: 2%;
+    bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#showitem {
+    float: left;
+    background: #121212c5;
+    padding: 8px 5px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+#showitem b {
+    color: #f8f8f8;
+    font-size: 22px;
+    font-weight: 300;
+    overflow: hidden;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    padding: 8px 10px 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+sucesso {
+    color: rgb(2, 209, 123);
+}
+
+negado {
+    color: rgb(255, 44, 79);
+}

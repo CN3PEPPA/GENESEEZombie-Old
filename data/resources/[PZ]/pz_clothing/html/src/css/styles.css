@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bebas Neue', cursive;
+  width: 100vw;
+  height: 100vh;
+  scrollbar-color: #121212;
+}
+
+.main-content {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+}
+
+.main-bg {
+  width: 100%;
+
+  max-width: 740px;
+
+  background-color: #121212e7;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 rgba(131, 5, 5, 0.5);
+
+  padding: 20px;
+
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+.item {
+  align-self: flex-start;
+
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content:center;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.item img {
+  border-radius: 10px;
+
+  width: 80px;
+  height: 80px;
+
+  object-fit: cover;
+
+}
+
+.item:hover{
+  transform: scale(1.1);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  margin-top: 0.5rem;
+  max-height: 400px;
+
+  overflow-y: scroll;
+
+  padding: 1rem;
+}
+
+.expand {
+  width: 100%;
+}
+
+.button {
+  width: 100px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 18px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.primary {
+  color: #fff;
+  background-color: #33af3a;
+}
+
+.secondary {
+  color: #fff;
+  background-color: #d63b3b;
+}
+.tertiary {
+  color: #fff;
+  background-color: #808080;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.ml-1 {
+  margin-left:15px;
+}
+.mr-1 {
+  margin-right:15px;
+}
+
+.title {
+  color: #fff;
+}
+
+.subtitle {
+  color: #fff;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 10px;
+}
+
+.col-4 {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+}
+.col-8 {
+  display: flex;
+  width: 70%;
+}
+
+/* SCROLLBAR STYLE */
+
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #121212;
+  border-radius: 5PX;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #830505;
+  border-radius: 5PX;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #830505;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes fadein {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}

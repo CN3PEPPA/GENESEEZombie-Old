@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'BebasNeueBold';
+  src: url('fonts/BebasNeueBold.ttf');
+}
+@font-face {
+  font-family: 'BebasNeueBook';
+  src: url('fonts/BebasNeueBook.ttf');
+}
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+
+	font-family: 'BebasNeueBold', sans-serif;
+
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	padding: 3rem;
+}
+
+#container {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	
+}
+
+
+.notify {
+	padding: 30px;
+	background: rgba(18, 18, 18, 0.7);
+	
+	
+	border-radius: 10px;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	width: 100%;
+	max-width: 350px;
+
+	margin-right: 7rem;
+
+	margin-bottom: 3rem;
+}
+
+.success {
+	box-shadow: 10px 10px 0px rgba(140, 235, 144, 0.4);
+}
+.error {
+	box-shadow: 10px 10px 0px rgba(235, 140, 140, 0.4);
+}
+.important {
+	box-shadow: 10px 10px 0px rgba(235, 213, 140, 0.4);
+}
+.announce {
+	box-shadow: 10px 10px 0px rgba(140, 178, 235, 0.4);
+}
+.warning {
+	box-shadow: 10px 10px 0px rgba(235, 183, 140, 0.4);
+}
+
+.notify-content {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	margin-left: 1rem;
+}
+
+.icon {
+	width: 50px;
+}
+.notify-type {
+	font-family: 'BebasNeueBold', sans-serif;
+	color: #fff;
+	font-size: 24px;
+}
+
+.notify-text {
+	font-family: 'BebasNeueBook', sans-serif;
+	color: #fff;
+	font-size: 18px;
+}

@@ -1,0 +1,55 @@
+config = {}
+
+config.small = {
+  { "chapa_metal", 5 },
+  { "chapa_plastico", 5 },
+  { "fragmento_metal", 150 },
+  { "fragmento_plastico", 150 },
+  { "fragmento_borracha", 150 },
+  { "tabua", 10 },
+  { "capsulas", 30 },
+  { "polvora", 80 },
+  { "prego", 100 },
+  { "parafuso", 100 },
+  { "barraca", 1 },
+  { "bandagem", 20 },
+  { "kit_medico", 5 },
+  { "blueprint", 1 },
+  { "mochila_m", 1 },
+}
+
+config.medium = {
+  { "chapa_metal", 15 },
+  { "chapa_plastico", 15 },
+  { "fragmento_metal", 250 },
+  { "fragmento_plastico", 250 },
+  { "fragmento_borracha", 250 },
+  { "tabua", 20 },
+  { "capsulas", 60 },
+  { "polvora", 160 },
+  { "prego", 200 },
+  { "parafuso", 200 },
+  { "barraca", 2 },
+  { "bandagem", 40 },
+  { "kit_medico", 10 },
+  { "blueprint", 1 },
+  { "mochila_g", 1 },
+}
+
+config.big = {
+  { "chapa_metal", 25 },
+  { "chapa_plastico", 25 },
+  { "fragmento_metal", 350 },
+  { "fragmento_plastico", 350 },
+  { "fragmento_borracha", 350 },
+  { "tabua", 40 },
+  { "capsulas", 120 },
+  { "polvora", 320 },
+  { "prego", 300 },
+  { "parafuso", 300 },
+  { "barraca", 3 },
+  { "bandagem", 80 },
+  { "kit_medico", 20 },
+  { "blueprint", 1 },
+  { "mochila_g", 2 },
+}

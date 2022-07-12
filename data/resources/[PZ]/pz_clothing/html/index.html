@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1.0">
+  <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Project Z Clothing</title>
+</head>
+
+<body>
+  <div class="main-content">
+    <div class="main-bg">
+      <h1 class="title">Escolha um modelo</h1>
+      <div class="row wrapper" id="itemContainer">
+
+      </div>
+      <div class="row" id="colorSelection">
+        <div class="col-4 mr-1">
+          <button id="downColor" class="button tertiary">
+            &#8592;
+          </button>
+          <h3 id="variationId" class="title ml-1 mr-1">
+            0
+          </h3>
+          <button id="upColor" class="button tertiary">
+            &#8594;
+          </button>
+        </div>
+        <div class="col-8">
+          <button id="saveClothing" class="button primary expand">
+            Salvar
+          </button>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+  <script src="src/js/main.js"></script>
+</body>
+
+</html>

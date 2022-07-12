@@ -1,0 +1,393 @@
+@font-face {
+  font-family: 'BebasNeueBold';
+  src: url('fonts/BebasNeueBold.ttf');
+}
+
+@font-face {
+  font-family: 'BebasNeueBook';
+  src: url('fonts/BebasNeueBook.ttf');
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  display: flex;
+
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+
+  /* background-image: url('images/bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+}
+
+.server-logo {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  /* margin-top: 2.2rem; */
+  margin-top: 55px;
+  width: 200px;
+  /* opacity: 0.4; */
+}
+
+.version-info {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  opacity: 0.7;
+  font-size: 18px;
+  font-family: 'BebasNeueBook';
+  color: back;
+}
+
+.main-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hud-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-content: center;
+}
+
+.main-hud {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem;
+
+  width: 200px;
+}
+
+.central-hud-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mr-1 {
+  margin-right: 0.5rem;
+}
+
+.mr-01 {
+  margin-right: 0.2rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.hud-progress {
+  width: 100%;
+  max-width: 100%;
+  height: 5px;
+}
+
+.hud-progress-ammo {
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hud-progress-content {
+  height: 100%;
+  width: 100%;
+}
+
+.life {
+  background-color: #2c8f3a;
+  transition: all 0.2s ease;
+  width: 70%;
+}
+
+.armor {
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+  width: 70%;
+}
+
+.water {
+  background-color: #128AF9;
+  transition: all 0.2s ease;
+}
+
+.hunger {
+  background-color: #EBDC8C;
+  transition: all 0.2s ease;
+}
+
+.fuel {
+  background-color: #ffab3d;
+  transition: all 0.2s ease;
+}
+
+.car {
+  background-color: #2c8f3a;
+  transition: all 0.2s ease;
+}
+
+.armor-border {
+  background-color: #ffffff;
+  height: 8px;
+}
+
+.life-border {
+  background-color: #0f3816;
+  height: 15px;
+}
+
+.water-border {
+  background-color: #1461a8;
+  height: 8px;
+}
+
+.hunger-border {
+  background-color: #947e04;
+  height: 8px;
+}
+
+.fuel-border {
+  background-color: #9c5d14;
+  height: 8px;
+}
+
+.car-border {
+  background-color: #175422;
+  height: 8px;
+}
+
+.hud-span {
+  font-family: 'BebasNeueBook';
+  font-size: 22px;
+  color: #fff;
+}
+
+.hud-span-ammo {
+  font-family: 'BebasNeueBook';
+  font-size: 20px;
+  color: #fff;
+}
+
+#ammoCount {
+  text-align: left;
+}
+
+#armourDisplay {
+  text-align: right;
+}
+
+.hud-row {
+  display: flex;
+  align-items: flex-end;
+}
+
+.ammo-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.life-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.stats-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icons-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.thirst-indicator {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.hunger-indicator {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.shield-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.sleep-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.ammo-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.indicators-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 580px;
+  margin-bottom: 1rem;
+}
+
+.indicator {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active {
+  border: 2px solid #8CEB90 !important;
+}
+
+.radio-frequence-span {
+  font-size: 18px;
+  font-family: 'BebasNeueBold';
+  color: #fff;
+}
+
+.radio-indicator {
+  margin-right: 5px;
+}
+
+.velocimeter-container {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 0;
+  width: 200px;
+  transition: all 0.7s ease;
+}
+
+.velocimeter-indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+
+.velocimeter-info-container {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 15px;
+}
+
+.velocity-span {
+  color: #fff;
+  font-family: 'BebasNeueBold';
+  font-size: 48px;
+  text-align: center;
+  line-height: 34px;
+  margin: 0;
+  padding: 0;
+}
+
+.subtitle-span {
+  color: #fff;
+  font-family: 'BebasNeueBold';
+  font-size: 12px;
+  text-align: center;
+
+}
+
+.miles-span {
+  color: #fff;
+  font-family: 'BebasNeueBold';
+  font-size: 18px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.fuel-indicator,
+.status-indicator {
+  display: flex;
+  align-items: center;
+  height: 15px;
+}
+
+.hud-icon {
+  width: 25px;
+  fill: #fff;
+}
+
+.hud-icon-small {
+  width: 20px;
+  fill: #fff;
+}
+
+.ammo {
+  background: repeating-linear-gradient(90deg,
+      #ffffff,
+      #ffffff 4px,
+      #00000000 4px,
+      #00000000 7px);
+}
+
+.bullet {
+  margin: 0 1px;
+}
+
+.bullet img {
+  height: 25px;
+}
+
+.ammo-container {
+  display: flex;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Projeto Z - Death Screen</title>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="main-content">
+		<img src="images/skull.svg" class="icon" alt="Morte">
+		<h1 class="title">Você está nocauteado!</h1>
+		<h4 class="subtitle">Aguarde para ser reanimado ou desista</h4>
+		<span class="clock" id="clock">00:15</span>
+
+		<button class="btn-surrender" onclick="abrirModal()">Desistir imediatamente</button>
+	</div>
+
+	<div class="popup" id="popup-1">
+		<div class="overlay" ></div>
+		<div class="content">
+			<p class="warning">&#9888;</p>
+			<div class="title">
+				<p class="subtitle-modal">Deseja realmente desistir <br> imediatamente?</p>
+			</div>
+			<div class="row mt-2">
+				<button type="button" class="btn mr-2" onclick="fecharModal()">Cancelar</button>
+				<button type="button" class="btn btn-danger" onclick="simAceita()">OK</button>
+			</div>
+		</div>
+	</div>
+	<script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>

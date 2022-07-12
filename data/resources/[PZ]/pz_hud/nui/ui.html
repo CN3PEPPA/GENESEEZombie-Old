@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+  <script src="ui.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js' type='text/javascript'></script>
+  <script src='https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js' type='text/javascript'>
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="ui.css">
+  <title>HUD</title>
+</head>
+
+<body>
+  <img src="https://i.imgur.com/TWYzY1v.png" alt="Projeto Z" class="server-logo">
+  <span class="version-info">Versão: 1.0.8.1445</span>
+  <div class="main-content">
+    <div class="hud-container">
+      <div class="hud-row">
+
+        <div class="central-hud-container mr-1">
+          <div class="main-hud">
+
+            <div class="ammo-row">
+              <span class="hud-span-ammo" id="ammoCount">
+                5/200
+              </span>
+            </div>
+            <div class="ammo-row  mb-1">
+              <div class="hud-progress-ammo">
+                <div class="ammo-container" id="ammoContainer">
+
+                </div>
+              </div>
+            </div>
+
+            <div class="life-row">
+              <div class="hud-progress life-border">
+                <div class="hud-progress-content life" id="healthDisplay"></div>
+              </div>
+            </div>
+            <div class="stats-row mb-1">
+              <div class="thirst-indicator">
+                <div class="hud-progress water-border">
+                  <div class="hud-progress-content water" id="waterDisplay"></div>
+                </div>
+              </div>
+              <div class="hunger-indicator">
+                <div class="hud-progress hunger-border">
+                  <div class="hud-progress-content hunger" id="foodDisplay"></div>
+                </div>
+              </div>
+            </div>
+            <div class="icons-row">
+              <div class="sleep-indicator">
+                <img src="images/sleep.svg" class="hud-icon" alt="Sleep">
+                <span class="hud-span sleep-span" id="sleepDisplay"></span>
+              </div>
+              <div class="shield-indicator mr-1">
+                <img src="images/shield.svg" class="hud-icon" alt="Shield">
+                <span class="hud-span shield-span" id="armourDisplay">0%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="velocimeter-container">
+    <div class="velocimeter-info-container">
+      <div class="velocity-span" id="velocityDisplay">
+        180
+      </div>
+      <div class="subtitle-span">
+        KM/h
+      </div>
+      <div class="car-status-info mb-1">
+        <div class="fuel-indicator">
+          <div class="hud-progress fuel-border">
+            <div class="hud-progress-content fuel" id="fuelDisplay"></div>
+          </div>
+        </div>
+        <div class="status-indicator">
+          <div class="hud-progress car-border">
+            <div class="hud-progress-content car" id="carDisplay"></div>
+          </div>
+        </div>
+      </div>
+      <div class="velocimeter-indicators">
+        <div class="car-light indicator mr-1" id="lightDisplay">
+          <img src="images/car-light-dimmed.svg" class="hud-icon-small" id="carLight" alt="Car Light">
+        </div>
+        <div class="car-light-high indicator mr-1" id="highlightDisplay">
+          <img src="images/car-light.svg" class="hud-icon-small" id="carLightHigh" alt="Car Light High">
+        </div>
+        <div class="seatbelt-indicator indicator " id="seatbeltDisplay">
+          <img src="images/seatbelt.svg" class="hud-icon-small" id="seatBeltIcon" alt="SeatBelt">
+        </div>
+      </div>
+      <div class="miles-span" id="milesDisplay">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

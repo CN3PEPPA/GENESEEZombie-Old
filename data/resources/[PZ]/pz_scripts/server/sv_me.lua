@@ -1,0 +1,12 @@
+-- local Tunnel = module("vrp","lib/Tunnel")
+-- local Proxy = module("vrp","lib/Proxy")
+-- local Tools = module("vrp","lib/Tools")
+-- vRP = Proxy.getInterface("vRP")
+-- vRPclient = Tunnel.getInterface("vRP")
+-- RegisterCommand('me',function(source,args,rawCommand)
+-- 	if args[1] then
+-- 		local user_id = vRP.getUserId(source)
+-- 		local identity = vRP.getUserIdentity(user_id)
+-- 		TriggerClientEvent('chatME',-1,source,identity.name,rawCommand:sub(3))
+-- 	end
+-- end)

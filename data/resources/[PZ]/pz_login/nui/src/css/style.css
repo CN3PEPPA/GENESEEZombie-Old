@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'BebasNeueBold';
+    src: url('../fonts/BebasNeueBold.ttf');
+}
+
+@font-face {
+    font-family: 'BebasNeueBook';
+    src: url('../fonts/BebasNeueBook.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'BebasNeueBold';
+    background-color: rgba(0, 0, 0, 0);
+    color: #efefef;
+}
+
+
+.title {
+    font-size: 18pt;
+    font-weight: 200;
+    color: #efefef;
+}
+
+.content {
+    background: #121212c0;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 450px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 0px #8ceb91b9;
+}
+
+.mb-2 {
+    margin-bottom: 1rem;
+}
+.mt-2 {
+    margin-top: 1rem;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.btn-success {
+    background: #008b07;
+    border: none;
+    color: #f7f7f7;
+    width: 80%;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 24px;
+    font-family: 'BebasNeueBold';
+    box-shadow: 0px 0px 10px 1px #8CEB90;
+
+    transition: all 0.2s ease;
+}
+.btn-warning {
+    background: #e4b10a;
+    border: none;
+    color: #f7f7f7;
+    width: 80%;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'BebasNeueBold';
+    box-shadow: 0px 0px 10px 1px #e4b10a;
+
+    transition: all 0.2s ease;
+}
+
+.btn-success:hover, .btn-warning:hover{
+    transform: scale(1.1);
+}
+.title{
+    font-size: 38px;
+    font-family: 'BebasNeueBold';
+}
+
+.logo{
+    width: 150px;
+}

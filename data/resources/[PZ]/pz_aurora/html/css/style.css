@@ -1,0 +1,36 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #12121294;
+}
+
+.pages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  padding: 1rem;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn-primary {
+  background-color: #121212;
+  color: #fff;
+}
+
